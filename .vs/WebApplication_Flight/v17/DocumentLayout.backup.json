@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\services\\authservicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\services\\authservicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\services\\iauthservicie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\services\\iauthservicie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\data\\flightdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\data\\flightdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\services\\userservicies\\iuserservicie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\services\\userservicies\\iuserservicie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,28 +47,8 @@
       "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\services\\userservicies\\userservicie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\services\\userservicies\\iuserservicie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\services\\userservicies\\iuserservicie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\services\\iauthservicie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\services\\iauthservicie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\services\\authservicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\services\\authservicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|c:\\users\\oalej\\code\\csharpprojects\\web api\\webapplication_flight\\webapplication_flight\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5200E9C-E8EB-4BB9-AE20-28B671A662B4}|WebApplication_Flight\\WebApplication_Flight.csproj|solutionrelative:webapplication_flight\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,50 +58,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "FlightDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Data\\FlightDbContext.cs",
+              "RelativeDocumentMoniker": "WebApplication_Flight\\Data\\FlightDbContext.cs",
+              "ToolTip": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Data\\FlightDbContext.cs",
+              "RelativeToolTip": "WebApplication_Flight\\Data\\FlightDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T16:19:04.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Models\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "WebApplication_Flight\\Models\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Models\\RefreshToken.cs",
+              "RelativeToolTip": "WebApplication_Flight\\Models\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T16:11:16.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "WebApplication_Flight\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Controllers\\AuthController.cs",
               "RelativeToolTip": "WebApplication_Flight\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T22:15:02.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "AuthServicies.cs",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Services\\AuthServicies.cs",
               "RelativeDocumentMoniker": "WebApplication_Flight\\Services\\AuthServicies.cs",
               "ToolTip": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Services\\AuthServicies.cs",
               "RelativeToolTip": "WebApplication_Flight\\Services\\AuthServicies.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAADwv0AAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAYwGgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T21:30:36.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "IAuthServicie.cs",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Services\\IAuthServicie.cs",
               "RelativeDocumentMoniker": "WebApplication_Flight\\Services\\IAuthServicie.cs",
               "ToolTip": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Services\\IAuthServicie.cs",
               "RelativeToolTip": "WebApplication_Flight\\Services\\IAuthServicie.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T21:28:57.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "IUserServicie.cs",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Services\\UserServicies\\IUserServicie.cs",
               "RelativeDocumentMoniker": "WebApplication_Flight\\Services\\UserServicies\\IUserServicie.cs",
@@ -106,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "UserServicie.cs",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Services\\UserServicies\\UserServicie.cs",
               "RelativeDocumentMoniker": "WebApplication_Flight\\Services\\UserServicies\\UserServicie.cs",
@@ -114,25 +148,24 @@
               "RelativeToolTip": "WebApplication_Flight\\Services\\UserServicies\\UserServicie.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAywBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T20:47:19.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T20:47:19.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\User.cs",
               "RelativeDocumentMoniker": "WebApplication_Flight\\User.cs",
               "ToolTip": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\User.cs",
               "RelativeToolTip": "WebApplication_Flight\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T20:31:59.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "TokenServicies.cs",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Services\\TokenServicies\\TokenServicies.cs",
               "RelativeDocumentMoniker": "WebApplication_Flight\\Services\\TokenServicies\\TokenServicies.cs",
@@ -140,12 +173,11 @@
               "RelativeToolTip": "WebApplication_Flight\\Services\\TokenServicies\\TokenServicies.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T20:29:50.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T20:29:50.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "FlightController.cs",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Controllers\\FlightController.cs",
               "RelativeDocumentMoniker": "WebApplication_Flight\\Controllers\\FlightController.cs",
@@ -153,12 +185,11 @@
               "RelativeToolTip": "WebApplication_Flight\\Controllers\\FlightController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T21:58:43.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T21:58:43.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\appsettings.json",
               "RelativeDocumentMoniker": "WebApplication_Flight\\appsettings.json",
@@ -166,18 +197,17 @@
               "RelativeToolTip": "WebApplication_Flight\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-18T03:32:09.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T03:32:09.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication_Flight\\Program.cs",
               "ToolTip": "C:\\Users\\oalej\\Code\\CsharpProjects\\Web API\\WebApplication_Flight\\WebApplication_Flight\\Program.cs",
               "RelativeToolTip": "WebApplication_Flight\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABwAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T03:29:59.244Z",
               "EditorCaption": ""

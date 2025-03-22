@@ -33,21 +33,44 @@ namespace WebApplication_Flight.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<string>> Login([FromBody] UserDTO request)
         {
-            var user = await _authServicie.GetUserByUsernameAsync(request.Username);
+            //var user = await _authServicie.GetUserByUsernameAsync(request.Username);
             
 
-            if (user == null)
+            //if (user == null)
+            //{
+            //    return BadRequest("User not found");
+            //}
+
+            //if (!_authServicie.VerifyPasswordHash(request.Password, user.PasswordHash, user.PasswordSalt))
+            //{
+            //    return Unauthorized("Wrong password");
+            //}
+
+            //string token = _authServicie.GenerateToken(user);
+            //return Ok(token);
+            var response = await _authServicie.LoginAsync(request.Username, request.Password, Response);
+
+            if(response == null)
             {
-                return BadRequest("User not found");
+                return Unauthorized("Invalid Username or password");
             }
 
-            if (!_authServicie.VerifyPasswordHash(request.Password, user.PasswordHash, user.PasswordSalt))
+            return Ok(response);
+        }
+
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshToken()
+        {
+            var refreshToken = Request.Cookies["refreshToken"];
+            
+            var response = await _authServicie.RefreshTokenAsync(refreshToken, Response);
+
+            if (response == null)
             {
-                return Unauthorized("Wrong password");
+                return Unauthorized("Invalid or expired refresh token");
             }
 
-            string token = _authServicie.GenerateToken(user);
-            return Ok(token);
+            return Ok(response);
         }
     }
 }

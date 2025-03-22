@@ -1,4 +1,6 @@
-﻿namespace WebApplication_Flight
+﻿using WebApplication_Flight.Models;
+
+namespace WebApplication_Flight
 {
     public class User
     {
@@ -6,9 +8,9 @@
         public string Username { get; set; } = string.Empty;
         public string Role { get; set; }
         public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; } 
-        public string RefreshToken { get; set; } = string.Empty;
-        public DateTime ExpiredToken { get; set; }
+        public byte[] PasswordSalt { get; set; }
+
+        public List<RefreshToken> RefreshTokens { get; set; } = new();
         
     }
 }

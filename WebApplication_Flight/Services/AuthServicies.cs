@@ -1,10 +1,15 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Azure;
+using Microsoft.AspNetCore.CookiePolicy;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using WebApplication_Flight.Data;
+using WebApplication_Flight.Models;
 
 namespace WebApplication_Flight.Services
 {
@@ -19,7 +24,7 @@ namespace WebApplication_Flight.Services
             _configuration = configuration;
         }
 
-           public string GenerateToken(User user)
+        public string GenerateToken(User user)
         {
             var claims = new List<Claim> {
                 new Claim(ClaimTypes.Name, user.Username),
@@ -40,25 +45,45 @@ namespace WebApplication_Flight.Services
             return jwt;
         }
 
-        public string Login(string username, string password)
+        public async Task<object> LoginAsync(string username, string password, HttpResponse response)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Username == username);
-            if (user == null) return "User not found";
+            var user = await _context.Users
+                .Include(u => u.RefreshTokens)
+                .FirstOrDefaultAsync(u => u.Username == username);
+            
+            if (user == null) return null;
 
             using var hmac = new HMACSHA512(user.PasswordSalt);
             var computeHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
 
             if (!computeHash.SequenceEqual(user.PasswordHash))
             {
-                return "Wrong Password";
+                return null;
             }
 
-            return GenerateToken(user);
+            var token = GenerateToken(user);
+
+            var refreshToken = GenerateRefreshToken();
+            user.RefreshTokens.Add(refreshToken);
+            await _context.SaveChangesAsync();
+
+            response.Cookies.Append("refreshToken", refreshToken.Token, new CookieOptions
+            {
+                HttpOnly = true,
+                Expires = refreshToken.ExpiredDate,
+                Secure = true,
+                SameSite = SameSiteMode.None
+            });
+
+
+
+            return new {Token  = token, RefreshToken = refreshToken.Token};
         }
 
         public async Task<User?> RegisterAsync(User user, string password)
         {
-            if (await _context.Users.AnyAsync(u => u.Username == user.Username)){
+            if (await _context.Users.AnyAsync(u => u.Username == user.Username))
+            {
                 return null;
             }
 
@@ -73,7 +98,7 @@ namespace WebApplication_Flight.Services
 
             return user;
 
-        }
+            }
 
         public async Task<User?> GetUserByUsernameAsync(string username)
         {
@@ -89,5 +114,67 @@ namespace WebApplication_Flight.Services
                 return computeHash.SequenceEqual(passwordHash);
             }
         }
+
+        public async Task<object> RefreshTokenAsync(string refreshToken, HttpResponse response)
+        {
+            var user = await _context.Users
+                .Include(u => u.RefreshTokens)
+                .FirstOrDefaultAsync(u => u.RefreshTokens.Any(rt => rt.Token == refreshToken));
+                    
+            if (user == null)
+            {
+                return null;
+            }
+
+            var validToken = user.RefreshTokens.FirstOrDefault(rt => rt.Token == refreshToken);
+
+            if (validToken == null || validToken.ExpiredDate < DateTime.UtcNow)
+            {
+                return null;
+            }
+
+            var newToken = GenerateToken(user);
+            var newRefreshToken = GenerateRefreshToken();
+            await SetRefreshTokenAsync(newRefreshToken, user, response);
+
+            
+            return new { Token = newToken, refreshToken = newRefreshToken.Token };
+                
+
+        }
+
+        private RefreshToken GenerateRefreshToken()
+        {
+            return new RefreshToken
+            {
+                Token = Convert.ToHexString(RandomNumberGenerator.GetBytes(64)),
+                ExpiredDate = DateTime.Now.AddDays(7),
+                CreatedDate = DateTime.Now
+            };
+        }
+
+        private async Task SetRefreshTokenAsync(RefreshToken refreshToken, User user, HttpResponse response)
+        {
+            user.RefreshTokens.RemoveAll(rt => rt.ExpiredDate < DateTime.UtcNow);
+
+            user.RefreshTokens.Add(refreshToken);
+           
+            await _context.SaveChangesAsync();
+
+            response.Cookies.Append("refreshToken", refreshToken.Token, new CookieOptions
+            {
+                HttpOnly = true, // Evita accesos desde JavaScript (más seguro)
+                Expires = refreshToken.ExpiredDate, // Expira en la fecha establecida
+                Secure = true, // Solo funciona en HTTPS
+                SameSite = SameSiteMode.None // Permite compartir cookies entre dominios
+            });
+
+
+
+
+
+
+        }
     }
+     
 }
